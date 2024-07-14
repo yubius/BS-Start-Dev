@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-hans" class="font-auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="SimSoft,YSH,YanShuHao,盐鸡,个人网站,起始页,新标签页,Yubius,是鱼布斯啊,鱼布斯,布斯,Bius,布斯起始页,浏览器,美化,上网主页,网址导航,纯净,无广告">
+    <meta name="description" content="简洁·便捷·时尚！这里是由SimSoft与鱼布斯合作开发的布斯起始页~">
+    <title>布斯起始页</title>
+    <link rel="icon" href="static/icon.png" sizes="192x192"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Kico-Style/kico.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1809713_rg58vy6eb7.css">
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<style>.navi-loading-mask{display:none!important;transition:all .5s!important;z-index:10;background:rgba(255,255,255,0.9);position:fixed;top:0;bottom:0;left:0;right:0;opacity:1}</style>
+    <link rel="stylesheet" href="static/main.css?3.141592">
+
+</head>
+<body style="top:0;transition:all .5s" class="dark" onload="loadstyle()">
+    <main>
+        <h1 id="time" onclick="scroll2page()" style="font-family:'Microsoft Yahei Light','Microsoft Yahei',PingFangSC-Regular,Helvetica,sans-serif,'等线';color:white;font-size:2.5em;font-weight:normal;text-shadow:0 0 5px grey;text-align:center;margin:0;margin-bottom:20px;margin-top:80px">你好</h1>
+        <section class="navi-search" style="height:100vh;text-align:center">
+            <span class="input-box search-backg">
+                <div class="search-select" title="切换搜索引擎" style="display:none">
+                    <div class="iconfont icon-baidu"></div>
+                </div>
+                <div class="search-selector"></div>
+                <input type="text" placeholder="Search" onfocus="searchstart()" onblur="searchstop()" onkeydown="entersearch(event)"/>
+            </span>
+            <div align="center">
+                <h1 onclick="copyyiyan()" id="yiyan" style="border-radius:10px;backdrop-filter:blur(5px);display:inline-block;font-family:微软雅黑;color:white;font-size:0.9em;font-weight:lighter;text-shadow:0 0 5px grey;text-align:center;margin:0;margin-top:20vh">正在加载一言......</h1>
+            </div>
+        </section>
+        <div style="height:calc(100vh - 300px);overflow-y:scroll;padding-bottom:30px;margin-top:30px" id="navisites-section">
+            <h1 id="time2" onclick="scroll1page()" style="font-family:'Microsoft Yahei Light','Microsoft Yahei',PingFangSC-Regular,Helvetica,sans-serif,'等线';color:white;font-size:2.5em;font-weight:normal;text-shadow:0 0 5px grey;text-align:center;margin:0;margin-bottom:20px"></h1>
+            <section class="navi-items"></section>
+        </div>
+        <section class="navi-background" style="transition:all .2s;"></section>
+        <section class="navi-background-mask" style="transition:all .2s;"></section>
+        <section class="navi-loading-mask" style="transition:all .2s;" align="center">
+            <img src="/static/icon.png" height="200px" width="200px" style="margin-top:calc(50vh - 100px)">
+        </section>
+    </main>
+    <div id="he-plugin-simple"></div>
+    <style>.wv-lt-refresh{display:none!important}.s-sticker-cond.module img{max-width:30px!important;width:30px!important;height:30px!important}.s-sticker-cond.module{padding:0!important}.s-sticker-city.module,.s-sticker-tmp.module,.s-sticker-qlty.module{display:none!important}</style>
+    <div class="weather">
+      <script>WIDGET = {"CONFIG":{"modules": "01234","background": "5","tmpColor":"FFFFFF","tmpSize":"16","cityColor":"FFFFFF","citySize":"16","aqiColor":"FFFFFF","aqiSize": "16","weatherIconSize":"24",    "alertIconSize": "18",    "padding": "10px 10px 10px 10px",    "shadow": "0","language": "auto",    "fixed": "false",    "vertical": "top",    "horizontal": "left",    "key": "079764eefd5740d9b9efd86ffefabd78"  }}</script>
+      <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+    </div>
+<footer id="footer" style="text-align:center">
+    <p style="font-family:'Microsoft Yahei Light','Microsoft Yahei',PingFangSC-Regular,Helvetica,sans-serif,'等线';display:inline-block;border-radius:10px;backdrop-filter:blur(5px)">© 2022 <a href="https://simsoft.top/" target="_blank">SimSoft</a> | <a href="http://beian.miit.gov.cn/" target="_blank">赣ICP备2022000685号</a></p>
+</footer>
+<window>
+    <section class="the-window updated">
+        <div class="window-head">
+            <img src="static/icon.png" style="height:30px;float:left">
+            <button>-</button>
+            <h3>技巧</h3>
+        </div>
+        <div class="window-body">
+            <article>
+                <h2>别致技巧</h2>
+                <h3>账号云同步</h3> 
+                <p>是否希望自动同步不同设备的起始页数据？</p>
+                <ul>
+                    <li>在“选项”中，登录“账户”</li>
+                    <li>前往设置开启“自动同步”（默认开启）</li>
+                    <li>下次打开会自动同步数据</li>
+                </ul>
+                <h2>基础技巧</h2> 
+                <h3>设定致美壁纸</h3>
+                <p>是否希望设置壁纸？了解设置精致，美妙的动态壁纸</p>
+                <ul>
+                    <li>打开“设定”</li>
+                    <li>在“致美壁纸”中选择“必应每日壁纸”</li>
+                    <li>然后刷新网站</li>
+                </ul>
+                <p><img src="static/wallpaper.jpg" alt="设定致美壁纸"></p>
+                <h3>访问捷径</h3>
+                <ul>
+                    <li>单击“time”组件以访问/退出捷径</li>
+                    <li>您可以前往“设定”中编辑捷径</li>
+                </ul>
+                <p><img src="static/jiejing.jpg" alt="访问捷径"></p>
+            </article>
+        </div>
+    </section>
+    <section class="the-window about">
+        <div class="window-head">
+            <img src="static/icon.png" style="height:30px;float:left">
+            <button>-</button>
+            <h3>关于</h3>
+        </div>
+        <div class="window-body">
+            <article>
+                <p><iframe src="" id="intro-vid" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:100%;height:50vh">您的设备不支持显示该视频。</iframe></p>
+                <a href="https://space.bilibili.com/18853927"> 
+                    <p style="text-align: center;">                    
+                    <img src="static/哔哩.jpg" width="380%" height="280%" />
+                    </p>
+                 </a>
+                <h2>    </h2>
+                <h2 id="update-date">正在获取...</h2>
+                <p>欢迎使用布斯起始页！本项目建设于 2020/2/21，是一个基于开源项目维护的网站。</p>
+                <p>开发者：Yuxuan(Yubius) & YanJi(SimSoft)</p>
+                <p>一起交流？<a href="https://jq.qq.com/?_wv=1027&k=rU9gu8El" target="_blank">QQ交流群</a>参与布斯的反馈，获取支持</p>
+                <p>进一步了解？<a href="https://space.bilibili.com/18853927" target="_blank">bilibili</a>了解有关布斯的最新动态</p>
+                <h3>类似项目：</h3>
+                <ul>
+                    <li><a href="https://limestart.cn" target="_blank" rel="nofollow">青柠起始页</a></li>
+                    <li><a href="https://h.simsoft.top" target="_blank" rel="nofollow">SimTab</a></li>
+                </ul>
+                <h3>使用了：</h3>
+                <ul>
+                    <li><a href="https://www.iconfont.cn" target="_blank" rel="nofollow">IconFont</a></li>
+                    <li><a href="https://github.com/Dreamer-Paul/Kico-Style" target="_blank" rel="nofollow">Kico Style</a></li>
+                    <li><a href="https://fontawesome.com" target="_blank" rel="nofollow">FontAwesome</a></li>
+                    <li><a href="https://github.com/Dreamer-Paul/KStart" target="_blank" rel="nofollow">Paul开源项目</a></li>
+                </ul>
+                <h3>意见反馈：</h3>
+                <a href="https://wj.qq.com/s2/9444065/a16d/"> 
+                    <p style="text-align: center;">                    
+                    <img src="static/fk.png" width="380%" height="280%" />
+                    </p>
+                    </a>
+        </div>
+    </section>
+    <section class="the-window setting">
+        <div class="window-head">
+            <img src="static/icon.png" style="height:30px;float:left">
+            <button>-</button>
+            <h3>设定</h3>
+        </div>
+        <div class="window-body">
+            <fieldset>
+                <label>
+                    <span>搜索引擎偏好</span>
+                    <select name="search" data-key="search_method"></select>
+                </label>
+                <label>
+                    <span>搜索框样式偏好</span>
+                    <select id="search-style" onchange="savestyle()">
+						<option value="black">深色</option>
+						<option value="white">浅色</option>
+						<option value="auto-time">根据时间切换</option>
+						<option value="auto-sys">跟随系统切换</option>
+                    </select>
+                </label>
+                <label>
+                    <span>亚克力特效</span>
+                    <img src="static/help.svg" style="float:right;margin-top: 5px;" onclick="ks.notice('使用亚克力特效会带来更好看的界面，但在大屏设备上会带来严重掉帧卡顿。如果您在使用过程中发现不流畅，建议关闭此选项。',{color:'green',time:5000})" height="15px">
+                    <select id="blur-set" onchange="saveblur()">
+						<option value="on">允许使用亚克力特效</option>
+						<option value="off">关闭亚克力特效</option>
+                    </select>
+                </label>
+                <label>
+                    <span>致美壁纸</span>
+                    <img src="static/help.svg" style="float:right;margin-top: 5px;" onclick="ks.notice('选择“必应壁纸”可以每日自动更新壁纸。',{color:'green',time:2000})" height="15px">
+                    <select name="background" data-key="back_method" id="backselect"></select>
+                </label>
+				<label id="setdiy-area">
+                    <textarea style='width:100%;border-radius:2px;background:transparent;border:1px solid #cccccc;resize:none;height:1em' onchange='savebackground()' id='backurl-input' placeholder="在此处输入自定义壁纸的网址"></textarea>
+                </label>
+				<label>
+                    <span>编辑捷径</span>
+                    <img src="static/help.svg" style="float:right;margin-top: 5px;" onclick="ks.notice('Windows用户请按住Ctrl键多选<br>Mac用户请按住Command键多选',{color:'green',time:2000})" height="15px">
+                    <select multiple name="sites" data-key="sites" style="height: 15em" id="set-site"></select>
+                </label>
+                <label class="sync-option">
+                    <span>云端同步</span>
+                    <select id="sync-set" onchange="savesync()">
+						<option value="on">使用自动同步</option>
+						<option value="off">关闭自动同步</option>
+                    </select>
+                </label>
+                <label>
+                    <span>版本切换</span>
+                    <img src="static/help.svg" style="float:right;margin-top: 5px;" onclick="ks.notice('提示：暂停止访问开发版',{color:'green',time:2000})" height="15px">
+                    <br>
+                  	您正在使用正式版<a href="https://dev.bius.top" target="_blank" rel="nofollow">尝鲜开发版</a></blockquote>
+                </label>
+
+          
+                <p align="center" style="display:none">
+                    <button class="btn small blue" name="reset">恢复默认</button>
+                    <button class="btn small blue" name="output">导出</button>
+                    <button class="btn small blue" name="input" onclick="loadnewsetting()">导入</button>
+                </p>
+            </fieldset>
+        </div>
+    </section>
+</window>
+<div class="menu-btm" onmouseover="$(this).attr('class','menu-btm-active')" onmouseout="$(this).attr('class','menu-btm')">
+    <img src="https://imgcdn.simsoft.top/upload/21-08-02-08-55-22-菜单.png" width="25px" height="25px"><span style="vertical-align:middle;font-size:1.2em;font-weight:bold;padding-left:20px;white-space:nowrap">选项</span>
+    <br><br>
+    <div class="user" onclick="window.open('//my.bius.top')"><img src="https://imgcdn.simsoft.top/upload/21-08-02-09-01-34-账户.png" width="20px" height="20px"><span style="vertical-align:middle;font-size:1.1em;padding-left:10px;white-space:nowrap;display:inline-block;line-height: 1em;"><span>账户</span><br><span id="uid" style="color:#2f88ff;font-size:0.8em;overflow: hidden;width: 110px;display: inline-block;">获取中...</span></span></div>
+    <div class="action-btn updated"><img src="https://imgcdn.simsoft.top/upload/21-08-02-09-01-06-%E6%8A%80%E5%B7%A7.png" width="20px" height="20px"><span style="vertical-align:middle;font-size:1.1em;padding-left:10px;white-space:nowrap">技巧</span></div>
+    <div class="action-btn about"><img src="https://imgcdn.simsoft.top/upload/21-08-02-09-00-40-%E5%85%B3%E4%BA%8E.png" width="20px" height="20px"><span style="vertical-align:middle;font-size:1.1em;padding-left:10px;white-space:nowrap">关于</span></div>
+    <div class="action-btn setting"><img src="https://imgcdn.simsoft.top/upload/21-08-02-09-01-21-设定.png" width="20px" height="20px"><span style="vertical-align:middle;font-size:1.1em;padding-left:10px;white-space:nowrap">设定</span></div>
+</div>
+<textarea id="yiyaninput" style="position:fixed;top:0;width:0;height:0;opacity:0"></textarea>
+
+<script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Kico-Style/kico.js"></script>
+<script src="https://my.bius.top/static/"></script>
+<script src="static/jq.js"></script>
+<script src="https://code.simsoft.top/getCode.php?app=biuso"></script>
+<script src="https://code.simsoft.top/getCode.php?app=bius-o"></script>
+<style id="backgroundstyle"></style><style id="blurstyle"></style>
+</body>
+</html>
+<!-- 代码优化：By SimSoft
+    https://simsoft.top/ -->
